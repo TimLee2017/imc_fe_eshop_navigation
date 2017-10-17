@@ -46,6 +46,64 @@
             color: #313131;
         }
 
+        .topmenu li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            color: #e4393c;
+        }
+
+        .topmenu li:hover {
+            border: 1px solid #ddd;
+            border-right: 0;
+            box-shadow: 0 0 8px #ddd;
+            -moz-box-shadow: 0 0 8px #ddd;
+            -webkit-box-shadow: 0 0 8px #ddd;
+            background-image: none;
+        }
+
+        .submenu {
+            display: none;
+            width: 715px;
+            left: 220px;
+            position: absolute;
+            top: 40px;
+            border: 1px solid #ddd;
+            z-index: 4;
+            background: white;
+            box-shadow: 0 0 8px #ddd;
+            -moz-box-shadow: 0 0 8px #ddd;
+            -webkit-box-shadow: 0 0 8px #ddd;
+            background-image: none;
+        }
+
+        .leftdiv {
+            background: gray;
+            float: left;
+            width: 490px;
+            margin: 5px;
+        }
+
+        .rightdiv {
+            background: blue;
+            float: left;
+            width: 200px;
+            margin: 5px;
+        }
+
+        .topmenu li:hover .submenu {
+            display: block;
+        }
+
+        .topmenu li:hover span {
+            background: white;
+            display: inline-block;
+            z-index: 20;
+            width: 20px;
+            height: 30px;
+            float: right;
+            position: relative;
+        }
+
     </style>
 </head>
 <body>
@@ -53,7 +111,22 @@
         <div class="toptitle">
             全部商品分类
         </div>
-        <li><a href="#">图书、音像、数字产品</a></li>
+        <li>
+            <a href="#">图书、音像、数字产品</a>
+            <span></span>
+            <div class="submenu">
+                <div class="leftdiv">
+                    左侧二级分类<br/>
+                    左侧二级分类<br/>
+                    左侧二级分类<br/>
+                    左侧二级分类<br/>
+                    左侧二级分类<br/>
+                </div>
+                <div class="rightdiv">
+                    右侧推荐品牌
+                </div>
+            </div>
+        </li>
         <li><a href="#">家用电器</a></li>
         <li><a href="#">手机、数码</a></li>
         <li><a href="#">电脑、办公</a></li>
